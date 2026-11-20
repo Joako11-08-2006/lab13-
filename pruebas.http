@@ -1,0 +1,17 @@
+### Requiere la extensión "REST Client" de VS Code
+@host = http://localhost:5000
+
+### 1. Estudiantes por nombre, apellido y email (apellido desc)
+GET {{host}}/api/students/search?firstName=a&lastName=&email=
+
+### 1b. Combinando filtros
+GET {{host}}/api/students/search?firstName=an&lastName=to&email=mail
+
+### 2. Estudiantes por nombre y grado (con datos del grado y cursos)
+GET {{host}}/api/students/by-name-grade?firstName=a&grade=Primero
+
+### 3. Matriculados por curso
+GET {{host}}/api/enrollments/by-course?course=mat
+
+### 4. Matriculados por grado
+GET {{host}}/api/enrollments/by-grade?grade=Segundo

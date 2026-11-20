@@ -1,0 +1,11 @@
+@{ ViewData["Title"] = "Inicio"; }
+<h1>Code First - Semana 13</h1>
+<p>CRUD con eliminación lógica: <a asp-controller="Grades" asp-action="Index">Grados</a> y
+<a asp-controller="Courses" asp-action="Index">Cursos</a>.</p>
+<h5>Endpoints (JSON)</h5>
+<ul>
+  <li><a href="/api/students/search?firstName=a&lastName=&email=">/api/students/search?firstName=&amp;lastName=&amp;email=</a></li>
+  <li><a href="/api/students/by-name-grade?firstName=a&grade=Primero">/api/students/by-name-grade?firstName=&amp;grade=</a></li>
+  <li><a href="/api/enrollments/by-course?course=mat">/api/enrollments/by-course?course=</a></li>
+  <li><a href="/api/enrollments/by-grade?grade=Primero">/api/enrollments/by-grade?grade=</a></li>
+</ul>
